@@ -1,0 +1,40 @@
+{
+  "contractRequiredFields": ["SAP_Number"],
+
+  "ipfsRequiredFields": [
+    "Bank",
+    "Date",
+    "Type",
+    "Value",
+    "Duration",
+    "Beneficiary",
+
+    "Document_1",
+    "Document_2"
+  ],
+
+  "ipfsOptionalFields": [],
+
+  "contractOptionalFields": [],
+
+  "fileFields": ["Document_1", "Document_2"],
+
+  "dateFields": ["Date"],
+
+  "textFields": [],
+
+  "selectFields": {},
+
+  "knownWalletSelectFields": [],
+
+  "roleRegistrySelectFields": [],
+
+  "subItemActions": [],
+
+  "contractActions": [],
+
+  "ipfsOptionalFieldsForMethod": {},
+  "ipfsRequiredFieldsForMethod": {},
+
+  "listFields": []
+}

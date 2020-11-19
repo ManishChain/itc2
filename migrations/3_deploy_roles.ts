@@ -27,6 +27,9 @@ import { WarehouseRoleRegistryContract } from '../types/truffle-contracts/Wareho
 import { BankRoleRegistryContract } from '../types/truffle-contracts/BankRoleRegistry';
 import { ApplicantRoleRegistryContract } from '../types/truffle-contracts/ApplicantRoleRegistry';
 import { BeneficiaryRoleRegistryContract } from '../types/truffle-contracts/BeneficiaryRoleRegistry';
+import { L1ApproverRoleRegistryContract } from '../types/truffle-contracts/L1ApproverRoleRegistry';
+import { L2ApproverRoleRegistryContract } from '../types/truffle-contracts/L2ApproverRoleRegistry';
+import { L3ApproverRoleRegistryContract } from '../types/truffle-contracts/L3ApproverRoleRegistry';
 
 import { UserRoleRegistryContract } from '../types/truffle-contracts/UserRoleRegistry';
 
@@ -60,6 +63,9 @@ const WarehouseRoleRegistry: WarehouseRoleRegistryContract = artifacts.require('
 const BankRoleRegistry: BankRoleRegistryContract = artifacts.require('BankRoleRegistry');
 const ApplicantRoleRegistry: ApplicantRoleRegistryContract = artifacts.require('ApplicantRoleRegistry');
 const BeneficiaryRoleRegistry: BeneficiaryRoleRegistryContract = artifacts.require('BeneficiaryRoleRegistry');
+const L1ApproverRoleRegistry: L1ApproverRoleRegistryContract = artifacts.require('L1ApproverRoleRegistry');
+const L2ApproverRoleRegistry: L2ApproverRoleRegistryContract = artifacts.require('L2ApproverRoleRegistry');
+const L3ApproverRoleRegistry: L3ApproverRoleRegistryContract = artifacts.require('L3ApproverRoleRegistry');
 
 const FreightForwarderRoleRegistry: FreightForwarderRoleRegistryContract = artifacts.require(
   'FreightForwarderRoleRegistry'
@@ -318,6 +324,51 @@ if (found(['BG'])) {
     }
   );
 }
+
+if (found(['TRADE'])) {
+  roleRegistries.push(
+    {
+      registry: MakerRoleRegistry,
+      role: 'ROLE_MAKER',
+      prefix: 'Maker',
+      seed: 'stove water train uniform minute juice mirror kitten human garage chunk tomato',
+    },
+    {
+      registry: L1ApproverRoleRegistry,
+      role: 'ROLE_L1Approver',
+      prefix: 'L1Approver',
+      seed: 'smile tomato cabin giraffe swallow school weapon expose tissue kitten they ribbon',
+    }, 
+
+    {
+        registry: L2ApproverRoleRegistry,
+        role: 'ROLE_L2APPROVER',
+        prefix: 'L2approver',
+        seed: 'valve yard cement detect festival tragic annual dinner enforce gate sun near',
+      },
+  
+      {
+        registry: L3ApproverRoleRegistry,
+        role: 'ROLE_L3APPROVER',
+        prefix: 'L3approver',
+        seed: 'spring profit rebuild kit river stove august tilt arrow crater rural tool',
+      },
+      {
+        registry: RequesterRoleRegistry,
+        role: 'ROLE_REQUESTER',
+        prefix: 'Requester',
+        seed: 'say radar original jungle camera position nominee assault pledge sure anger sample',
+      },
+      {
+        registry: BankRoleRegistry,
+        role: 'ROLE_BANK',
+        prefix: 'bank',
+        seed: 'infant transfer spatial warfare chief mandate ahead execute grit vessel domain clay',
+      },
+
+  );
+}
+
 
 module.exports = async (deployer: Truffle.Deployer, network: string, accounts: string[]) => {
   const userData: IMintUser[] = [];
