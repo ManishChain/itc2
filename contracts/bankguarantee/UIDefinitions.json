@@ -1,0 +1,65 @@
+{
+  "ipfsOptionalFieldsForMethod": {},
+  "ipfsRequiredFieldsForMethod": {},
+  "ipfsRequiredFields": [
+    "nameApplicant",
+    "nameBeneficiary",
+    "nameIssuingBank",
+    "amount",
+    "amountInWords",
+    "currency",
+    "dateIssuance",
+    "dateMaturity",
+    "dateExpiry",
+    "purpose",
+    "jurisdiction"
+  ],
+
+  "ipfsOptionalFields": [
+    "guaranteeNumber",
+    "stampCertificateNumber",
+    "stampDate",
+    "stampDutyType",
+    "stampCertificateIssuedDate",
+    "otherTerms"
+  ],
+
+  "contractRequiredFields": ["Name"],
+
+  "contractOptionalFields": [],
+
+  "fileFields": [
+      "purpose",
+      "otherTerms"
+    ],
+
+  "dateFields": ["dateIssuance","dateMaturity","dateExpiry","stampDate","stampCertificateIssuedDate"],
+
+  "dateTimeFields": [],
+
+  "textFields": [],
+
+  "listFields": [],
+
+  "selectFields": {
+    "currency": [
+      { "value": "INR", "label": "INR" },
+      { "value": "GBP", "label": "GBP" }
+    ],
+    "stampDutyType": [
+      { "value": "5A", "label": "5A" },
+      { "value": "6A", "label": "6A" }
+    ],
+    "jurisdiction": [
+      { "value": "delhi", "label": "Delhi" },
+      { "value": "agra", "label": "Agra" },
+      { "value": "jaipur", "label": "Jaipur" }
+    ]
+  },
+
+  "knownWalletSelectFields": [],
+
+  "roleRegistrySelectFields": [],
+
+  "subItemActions": []
+}

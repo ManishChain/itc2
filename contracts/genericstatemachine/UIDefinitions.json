@@ -1,0 +1,41 @@
+{
+  "ipfsRequiredFields": [
+    "type",
+    "creationDate",
+    "place"
+  ],
+
+  "ipfsOptionalFields": ["optionalParameter"],
+
+  "contractRequiredFields": ["param1", "param2", "param3"],
+
+  "contractOptionalFields": [],
+
+  "fileFields": [],
+
+  "dateFields": ["creationDate"],
+
+  "textFields": [],
+
+  "selectFields": {
+    "place": [
+      { "value": "Belgium", "label": "Belgium" },
+      { "value": "France", "label": "France" },
+      { "value": "India", "label": "India" },
+      { "value": "Singapore", "label": "Singapore" }
+    ]
+  },
+
+  "knownWalletSelectFields": ["param2"],
+
+  "roleRegistrySelectFields": [],
+
+  "subItemActions": [],
+
+  "contractActions": [],
+
+  "ipfsOptionalFieldsForMethod": {},
+  "ipfsRequiredFieldsForMethod": {},
+
+  "listFields": []
+}

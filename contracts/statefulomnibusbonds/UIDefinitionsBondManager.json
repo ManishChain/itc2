@@ -1,0 +1,60 @@
+{
+  "ipfsRequiredFields": [],
+
+  "ipfsOptionalFields": [],
+
+  "ipfsOptionalFieldsForMethod": {},
+  "ipfsRequiredFieldsForMethod": {},
+
+  "contractRequiredFields": [],
+
+  "contractOptionalFields": ["comment"],
+
+  "fileFields": [],
+
+  "dateFields": [],
+
+  "textFields": [],
+
+  "selectFields": {
+    "inflight": [
+      {
+        "value": "YES",
+        "label": "YES"
+      },
+      {
+        "value": "NO",
+        "label": "NO"
+      }
+    ]
+  },
+
+  "knownWalletSelectFields": [],
+
+  "roleRegistrySelectFields": ["roleRegistryAddress"],
+
+  "subItemActions": [
+    {
+      "name": "approveRequest",
+      "prefilledField": "index"
+    },
+    {
+      "name": "denyRequest",
+      "prefilledField": "index"
+    },
+    {
+      "name": "settled",
+      "prefilledField": "index"
+    },
+    {
+      "name": "notSettled",
+      "prefilledField": "index"
+    }
+  ],
+
+  "contractActions": ["createMintRequest", "createBurnRequest"],
+
+  "listFields": [],
+
+  "fieldsWithDecimals": ["amount"]
+}

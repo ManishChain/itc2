@@ -1,0 +1,49 @@
+{
+  "ipfsRequiredFields": ["isin", "issuer"],
+
+  "ipfsOptionalFields": [],
+
+  "ipfsOptionalFieldsForMethod": {},
+  "ipfsRequiredFieldsForMethod": {},
+
+  "contractRequiredFields": [
+    "name",
+    "parValue",
+    "parCurrency",
+    "maturityPeriod",
+    "couponRate",
+    "couponPeriod",
+    "decimals"
+  ],
+
+  "contractOptionalFields": [],
+
+  "fileFields": [],
+
+  "dateFields": ["issuanceDate", "launchDate", "maturityDate", "_issuanceDate", "_launchDate", "_maturityDate"],
+
+  "textFields": [],
+
+  "selectFields": {},
+
+  "knownWalletSelectFields": ["from", "to"],
+
+  "roleRegistrySelectFields": ["roleRegistryAddress"],
+
+  "subItemActions": [
+    {
+      "name": "redeemCoupons",
+      "prefilledField": "holder"
+    },
+    {
+      "name": "claimPar",
+      "prefilledField": "holder"
+    }
+  ],
+
+  "contractActions": ["mint", "mintToRoleRegistry", "setIssuanceDate", "launch"],
+
+  "listFields": [],
+
+  "fieldsWithDecimals": ["amount", "value", "totalSupply", "balance", "couponAmountPerBondPerSixMonths", "parValue"]
+}

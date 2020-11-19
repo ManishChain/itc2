@@ -1,0 +1,43 @@
+{
+  "contractRequiredFields": ["Name"],
+  
+  "ipfsRequiredFields": [
+    "Address",
+    "Products",
+    "Year_of_Incorporation",
+    "Registration_Number",
+    "Contact_Details",
+    
+    "Financial_Reports",
+    "Incorporation_Certificate"
+  ],
+
+  "ipfsOptionalFields": [],
+
+  
+
+  "contractOptionalFields": [],
+
+  "fileFields": ["Financial_Reports","Incorporation_Certificate"],
+
+  "dateFields": [],
+
+  "textFields": [],
+
+  "selectFields": {
+    
+  },
+
+  "knownWalletSelectFields": [],
+
+  "roleRegistrySelectFields": [],
+
+  "subItemActions": [],
+
+  "contractActions": [],
+
+  "ipfsOptionalFieldsForMethod": {},
+  "ipfsRequiredFieldsForMethod": {},
+
+  "listFields": []
+}

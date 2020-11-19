@@ -1,0 +1,40 @@
+{
+  "contractRequiredFields": ["Order_Number"],
+
+  "ipfsRequiredFields": [
+    "Item_Name",
+    "Order_Date",
+    "Quantity",
+    "Price",
+    "Delivery_Duration",
+    "Delivery_Address",
+
+    "Invoice",
+    "Specifications"
+  ],
+
+  "ipfsOptionalFields": [],
+
+  "contractOptionalFields": [],
+
+  "fileFields": ["Invoice", "Specifications"],
+
+  "dateFields": ["Order_Date"],
+
+  "textFields": [],
+
+  "selectFields": {},
+
+  "knownWalletSelectFields": [],
+
+  "roleRegistrySelectFields": [],
+
+  "subItemActions": [],
+
+  "contractActions": [],
+
+  "ipfsOptionalFieldsForMethod": {},
+  "ipfsRequiredFieldsForMethod": {},
+
+  "listFields": []
+}
