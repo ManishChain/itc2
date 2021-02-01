@@ -33,6 +33,9 @@ const WarehouseRoleRegistry = artifacts.require('WarehouseRoleRegistry');
 const BankRoleRegistry = artifacts.require('BankRoleRegistry');
 const ApplicantRoleRegistry = artifacts.require('ApplicantRoleRegistry');
 const BeneficiaryRoleRegistry = artifacts.require('BeneficiaryRoleRegistry');
+const L1ApproverRoleRegistry = artifacts.require('L1ApproverRoleRegistry');
+const L2ApproverRoleRegistry = artifacts.require('L2ApproverRoleRegistry');
+const L3ApproverRoleRegistry = artifacts.require('L3ApproverRoleRegistry');
 const FreightForwarderRoleRegistry = artifacts.require('FreightForwarderRoleRegistry');
 const roleRegistries = [];
 const found = (features) => enabledFeatures().some((feature) => features.includes(feature));
@@ -223,6 +226,39 @@ if (found(['BG'])) {
         role: 'ROLE_BANK',
         prefix: 'bank',
         seed: 'wrap bulb fold snap ready win announce swarm hidden enter innocent window',
+    });
+}
+if (found(['TRADE'])) {
+    roleRegistries.push({
+        registry: MakerRoleRegistry,
+        role: 'ROLE_MAKER',
+        prefix: 'Maker',
+        seed: 'stove water train uniform minute juice mirror kitten human garage chunk tomato',
+    }, {
+        registry: L1ApproverRoleRegistry,
+        role: 'ROLE_L1Approver',
+        prefix: 'L1Approver',
+        seed: 'smile tomato cabin giraffe swallow school weapon expose tissue kitten they ribbon',
+    }, {
+        registry: L2ApproverRoleRegistry,
+        role: 'ROLE_L2APPROVER',
+        prefix: 'L2approver',
+        seed: 'valve yard cement detect festival tragic annual dinner enforce gate sun near',
+    }, {
+        registry: L3ApproverRoleRegistry,
+        role: 'ROLE_L3APPROVER',
+        prefix: 'L3approver',
+        seed: 'spring profit rebuild kit river stove august tilt arrow crater rural tool',
+    }, {
+        registry: RequesterRoleRegistry,
+        role: 'ROLE_REQUESTER',
+        prefix: 'Requester',
+        seed: 'say radar original jungle camera position nominee assault pledge sure anger sample',
+    }, {
+        registry: BankRoleRegistry,
+        role: 'ROLE_BANK',
+        prefix: 'bank',
+        seed: 'infant transfer spatial warfare chief mandate ahead execute grit vessel domain clay',
     });
 }
 module.exports = async (deployer, network, accounts) => {

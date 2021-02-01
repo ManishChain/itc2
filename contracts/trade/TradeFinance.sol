@@ -52,14 +52,31 @@ contract TradeFinance is Converter, StateMachine, IpfsFieldContainer, FileFieldC
 
   string public _uiFieldDefinitionsHash;
   string public _SAP_Number;
+  string public _Bank;
+  string public _Date;
+  string public _Value;
+  string public _Beneficiary;
+ 
 
   constructor(
     address gateKeeper,
     string memory SAP_Number,
+    string memory Bank,
+    string memory Date,
+    string memory Value,
+    string memory Beneficiary,
+
+
+
     string memory ipfsFieldContainerHash,
     string memory uiFieldDefinitionsHash
   ) public Secured(gateKeeper) {
     _SAP_Number = SAP_Number;
+    _Bank = Bank;
+    _Date = Date;
+    _Value = Value;
+    _Beneficiary = Beneficiary;
+
     _ipfsFieldContainerHash = ipfsFieldContainerHash;
     _uiFieldDefinitionsHash = uiFieldDefinitionsHash;
     setupStateMachine();
@@ -70,8 +87,12 @@ contract TradeFinance is Converter, StateMachine, IpfsFieldContainer, FileFieldC
    * @param SAP_Number It is the order Identification Number
    * @param ipfsFieldContainerHash ipfs hash of tradefinance metadata
    */
-  function edit(string memory SAP_Number, string memory ipfsFieldContainerHash) public {
+  function edit(string memory SAP_Number, string memory Bank, string memory Date,  string memory Value,  string memory Beneficiary, string memory ipfsFieldContainerHash) public {
     _SAP_Number = SAP_Number;
+    _Bank = Bank;
+    _Date = Date;
+    _Value = Value;
+    _Beneficiary = Beneficiary;
     _ipfsFieldContainerHash = ipfsFieldContainerHash;
   }
 

@@ -1,17 +1,13 @@
 {
-  "contractRequiredFields": ["SAP_Number"],
-
-  "ipfsRequiredFields": [
+  "contractRequiredFields": ["SAP_Number", 
     "Bank",
     "Date",
-    "Type",
     "Value",
-    "Duration",
-    "Beneficiary",
+    "Beneficiary" ],
 
+  "ipfsRequiredFields": [
     "Document_1",
-    "Document_2"
-  ],
+    "Document_2"],
 
   "ipfsOptionalFields": [],
 

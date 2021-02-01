@@ -30,7 +30,7 @@ contract TradeFinanceFactory is StateMachineFactory {
    * @param SAP_Number is unique TradeFinance Identification Number
    * @param ipfsFieldContainerHash ipfs hash of tradefinance metadata
    */
-  function create(string memory SAP_Number, string memory ipfsFieldContainerHash)
+  function create(string memory SAP_Number, string memory Bank, string memory Date,  string memory Value, string memory Beneficiary, string memory ipfsFieldContainerHash)
     public
     authWithCustomReason(CREATE_STATEMACHINE_ROLE, 'Sender needs CREATE_STATEMACHINE_ROLE')
   {
@@ -40,6 +40,10 @@ contract TradeFinanceFactory is StateMachineFactory {
     TradeFinance tradefinance = new TradeFinance(
       address(gateKeeper),
       SAP_Number,
+      Bank,
+      Date,
+      Value,
+      Beneficiary,
       ipfsFieldContainerHash,
       _uiFieldDefinitionsHash
     );

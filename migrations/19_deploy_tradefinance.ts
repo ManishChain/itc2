@@ -37,21 +37,17 @@ module.exports = async (deployer: Truffle.Deployer, network: string, accounts: s
       {
         SAP_Number: '5YJXCAE45GFF00001',
 
-        Bank: 'Car',
-        Type: '425382',
-        Date: 1558362520,
+        Bank: 'SBI',
+        Date: '1558362520',
         Value: '55000',
-        Duration: '6 Months',
         Beneficiary: 'Street 4, City Central',
       },
       {
         SAP_Number: '5YJRE1A31A1P01234',
 
-        Bank: 'Car',
-        Type: '123054',
-        Date: 1558062520,
+        Bank: 'ICICI',
+        Date: '1558362520',
         Value: '55000',
-        Duration: '8 Months',
         Beneficiary: 'Street 5, City Square',
       },
     ];
@@ -66,22 +62,14 @@ async function createTradeFinance(
   factory: TradeFinanceFactoryInstance,
   TradeFinance: {
     SAP_Number: string;
-
     Bank: string;
-    Type: string;
-    Date: number;
+    Date: string;
     Value: string;
-    Duration: string;
     Beneficiary: string;
   }
 ) {
   const ipfsHash = await storeIpfsJsonData({
-    Bank: TradeFinance.Bank,
-    Type: TradeFinance.Type,
-    Date: TradeFinance.Date,
-    Value: TradeFinance.Value,
-    Duration: TradeFinance.Duration,
-    Beneficiary: TradeFinance.Beneficiary,
+  
   });
-  await factory.create(TradeFinance.SAP_Number, ipfsHash);
+  await factory.create(TradeFinance.SAP_Number, TradeFinance.Bank,  TradeFinance.Date, TradeFinance.Value,  TradeFinance.Beneficiary, ipfsHash);
 }
