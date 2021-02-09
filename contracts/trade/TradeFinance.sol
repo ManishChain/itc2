@@ -46,9 +46,10 @@ contract TradeFinance is Converter, StateMachine, IpfsFieldContainer, FileFieldC
   bytes32 public constant ROLE_L2APPROVER = 'ROLE_L2';
   bytes32 public constant ROLE_L3APPROVER = 'ROLE_L3';
   bytes32 public constant ROLE_REQUESTER = 'ROLE_REQUESTER';
+  bytes32 public constant ROLE_USER = 'ROLE_USER';
 
 
-  bytes32[] public _roles = [ROLE_ADMIN, ROLE_MAKER, ROLE_BANK, ROLE_L1APPROVER, ROLE_L2APPROVER, ROLE_L3APPROVER, ROLE_REQUESTER];
+  bytes32[] public _roles = [ROLE_ADMIN,ROLE_USER, ROLE_MAKER, ROLE_BANK, ROLE_L1APPROVER, ROLE_L2APPROVER, ROLE_L3APPROVER, ROLE_REQUESTER];
 
   string public _uiFieldDefinitionsHash;
   string public _SAP_Number;
@@ -189,6 +190,22 @@ contract TradeFinance is Converter, StateMachine, IpfsFieldContainer, FileFieldC
     addRoleForState(STATE_6, ROLE_ADMIN);
     addRoleForState(STATE_7, ROLE_ADMIN);
     addRoleForState(STATE_8, ROLE_ADMIN);
+
+    addRoleForState(STATE_1, ROLE_USER);
+    addRoleForState(STATE_2A, ROLE_USER);
+    addRoleForState(STATE_2B, ROLE_USER);
+    addRoleForState(STATE_2C, ROLE_USER);
+    addRoleForState(STATE_3A, ROLE_USER);
+    addRoleForState(STATE_4A, ROLE_USER);
+    addRoleForState(STATE_5A, ROLE_USER);
+    addRoleForState(STATE_4B, ROLE_USER);
+    addRoleForState(STATE_5B, ROLE_USER);
+    addRoleForState(STATE_5C, ROLE_USER);
+    addRoleForState(STATE_6, ROLE_USER);
+    addRoleForState(STATE_6, ROLE_USER);
+    addRoleForState(STATE_6, ROLE_USER);
+    addRoleForState(STATE_7, ROLE_USER);
+    addRoleForState(STATE_8, ROLE_USER);
 
     setInitialState(STATE_1);
   }
