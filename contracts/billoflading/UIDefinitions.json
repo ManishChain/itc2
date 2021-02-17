@@ -1,0 +1,71 @@
+{
+  "ipfsOptionalFieldsForMethod": {},
+  "ipfsRequiredFieldsForMethod": {},
+  "ipfsRequiredFields": [
+    "typeOfBill",
+    "from",
+    "to",
+    "carrier",
+    "portOfOrigin",
+    "portOfDestination",
+    "dateOfLoading",
+    "typeOfGoods",
+    "valueOfGoods",
+    "countOfGoods",
+    "weightOfGoods",
+    "sizeOfGoods"
+  ],
+
+  "ipfsOptionalFields": [
+    "specialConditions",
+    "commercialInvoice",
+    "packagingList",
+    "certificateOfOrigin",
+    "letterOfInstruction",
+    "dangerousGoodsForm"
+  ],
+
+  "contractRequiredFields": [],
+
+  "contractOptionalFields": [],
+
+  "fileFields": [
+    "commercialInvoice",
+    "packaginList",
+    "certificateOfOrigin",
+    "letterOfInstruction",
+    "dangerousGoodsForm"
+  ],
+
+  "dateFields": ["dateOfLoading"],
+
+  "dateTimeFields": [],
+
+  "textFields": ["specialConditions"],
+
+  "listFields": [],
+
+  "selectFields": {
+    "typeOfBill": [
+      { "value": "straight", "label": "straight" },
+      { "value": "shipper's order", "label": "shipper's order" },
+      { "value": "air waybill", "label": "air waybill" },
+      { "value": "originals", "label": "originals" },
+      { "value": "inland", "label": "inland" },
+      { "value": "multimodal", "label": "multimodal" },
+      { "value": "through", "label": "through" },
+      { "value": "switch", "label": "switch" }
+    ],
+    "typeOfGoods": [
+      { "value": "frozen", "label": "frozen" },
+      { "value": "dry", "label": "dry" },
+      { "value": "bulk", "label": "bulk" }
+    ]
+  },
+
+  "knownWalletSelectFields": ["carrier"],
+
+  "roleRegistrySelectFields": [],
+
+  "subItemActions": []
+}

@@ -1,0 +1,41 @@
+{
+  "ipfsOptionalFieldsForMethod": {},
+  "ipfsRequiredFields": [],
+
+  "ipfsOptionalFields": [],
+  "fieldsWithDecimals": [
+    "InBoneChickenPerKg",
+    "WokForTwoPerPackage",
+    "FreeRangeChickenPerChicken",
+    "PastaSaladPerPackage"
+  ],
+  "contractRequiredFields": [
+    "businessUnit",
+    "InBoneChickenPerKg",
+    "WokForTwoPerPackage",
+    "FreeRangeChickenPerChicken",
+    "PastaSaladPerPackage"
+  ],
+
+  "contractOptionalFields": [],
+
+  "fileFields": [],
+
+  "dateFields": [],
+
+  "dateTimeFields": [],
+
+  "textFields": [],
+
+  "listFields": [],
+
+  "selectFields": {},
+
+  "knownWalletSelectFields": ["businessUnit"],
+
+  "roleRegistrySelectFields": [],
+
+  "subItemActions": [],
+
+  "ipfsRequiredFieldsForMethod": {}
+}

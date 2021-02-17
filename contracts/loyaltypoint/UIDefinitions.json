@@ -1,0 +1,32 @@
+{
+  "ipfsRequiredFields": [],
+
+  "ipfsOptionalFields": [],
+
+  "contractRequiredFields": ["name", "decimals", "amount", "from", "to", "roleRegistryAddress", "value"],
+
+  "contractOptionalFields": [],
+
+  "fileFields": [],
+
+  "dateFields": [],
+
+  "textFields": [],
+
+  "selectFields": {},
+
+  "knownWalletSelectFields": ["from", "to"],
+
+  "roleRegistrySelectFields": ["roleRegistryAddress"],
+
+  "subItemActions": [],
+
+  "contractActions": ["mint", "mintToRoleRegistry", "burn", "burnFromRoleRegistry", "transfer"],
+
+  "listFields": [],
+
+  "fieldsWithDecimals": ["amount", "value", "totalSupply", "balance"],
+
+  "ipfsOptionalFieldsForMethod": {},
+  "ipfsRequiredFieldsForMethod": {}
+}

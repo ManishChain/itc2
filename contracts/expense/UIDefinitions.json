@@ -1,0 +1,103 @@
+{
+  "ipfsRequiredFields": [
+    "localCurrencyAmount",
+    "localCurrency",
+    "exchangeRate",
+    "resultAndActivity",
+    "category",
+    "country",
+    "incomeGeneratingActivity",
+    "description",
+    "supplier",
+    "invoiceDate"
+  ],
+
+  "ipfsOptionalFields": ["remarks"],
+
+  "contractRequiredFields": ["amount", "proof", "settlement"],
+
+  "contractOptionalFields": [],
+
+  "fileFields": ["proof"],
+
+  "dateFields": ["invoiceDate"],
+
+  "dateTimeFields": [],
+
+  "textFields": ["description", "remarks"],
+
+  "selectFields": {
+    "country": [
+      { "value": "BJ", "label": "Benin" },
+      { "value": "CR", "label": "Kameroen" },
+      { "value": "EC", "label": "Ecuador" },
+      { "value": "PE", "label": "Peru" },
+      { "value": "HT", "label": "Haïti" },
+      { "value": "SV", "label": "El Salvador" },
+      { "value": "ML", "label": "Mali" },
+      { "value": "TZ", "label": "Tanzania" },
+      { "value": "BO", "label": "Bolivia" },
+      { "value": "MG", "label": "Madagaskar" },
+      { "value": "CD", "label": "DR Congo" }
+    ],
+    "localCurrency": [
+      { "value": "USD", "label": "United States Dollar" },
+      { "value": "EUR", "label": "Euro" },
+      { "value": "HTG", "label": "Gourde" },
+      { "value": "CFA", "label": "CFA Franc" },
+      { "value": "TSH", "label": "Shilingi" },
+      { "value": "BOB", "label": "Boliviano" },
+      { "value": "MGA", "label": "Ariary" },
+      { "value": "CDF", "label": "Congolese Franc" }
+    ],
+    "resultAndActivity": [
+      { "value": "R1_A1", "label": "R1 - A1" },
+      { "value": "R1_A2", "label": "R1 - A2" },
+      { "value": "R1_A3", "label": "R1 - A3" },
+      { "value": "R1_A4", "label": "R1 - A4" },
+      { "value": "R2_A1", "label": "R2 - A1" },
+      { "value": "R2_A2", "label": "R2 - A2" },
+      { "value": "R2_A3", "label": "R2 - A3" },
+      { "value": "R2_A4", "label": "R2 - A4" },
+      { "value": "R3_A1", "label": "R3 - A1" },
+      { "value": "R3_A2", "label": "R3 - A2" },
+      { "value": "R3_A3", "label": "R3 - A3" },
+      { "value": "R3_A4", "label": "R3 - A4" },
+      { "value": "R3_A5", "label": "R3 - A5" },
+      { "value": "R4_A1", "label": "R4 - A1" },
+      { "value": "R4_A2", "label": "R4 - A2" },
+      { "value": "R4_A3", "label": "R4 - A3" },
+      { "value": "R4_A4", "label": "R4 - A4" },
+      { "value": "R4_A5", "label": "R4 - A5" }
+    ],
+    "category": [
+      { "value": "infrastructure", "label": "Infrastructure" },
+      { "value": "equipment", "label": "Equipment" },
+      { "value": "running_costs", "label": "Running Costs" },
+      { "value": "capacity_building", "label": "Capacity building" },
+      { "value": "personnel", "label": "Personnel" },
+      { "value": "other", "label": "Other" }
+    ],
+    "settlement": [
+      { "value": "bank", "label": "Bank" },
+      { "value": "cash", "label": "Cash" }
+    ],
+    "incomeGeneratingActivity": [
+      { "value": "yes", "label": "Yes" },
+      { "value": "no", "label": "No" }
+    ]
+  },
+
+  "knownWalletSelectFields": ["owner"],
+
+  "roleRegistrySelectFields": [],
+
+  "subItemActions": [],
+
+  "ipfsOptionalFieldsForMethod": {},
+
+  "ipfsRequiredFieldsForMethod": {},
+
+  "listFields": []
+
+}

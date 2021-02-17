@@ -1,0 +1,71 @@
+{
+  "ipfsRequiredFields": [
+    "entitity",
+    "recId",
+    "type",
+    "caSeKey",
+    "fiscSitId",
+    "updDate",
+    "shape_area",
+    "plot_drawings",
+    "geo"
+  ],
+
+  "ipfsOptionalFields": ["adres"],
+
+  "contractRequiredFields": ["name", "caPaKey", "owner"],
+
+  "contractOptionalFields": [""],
+
+  "fileFields": ["plot_drawings"],
+
+  "dateFields": ["updDate"],
+
+  "textFields": [
+    "name",
+    "recId",
+    "caPaKey",
+    "caSeKey",
+    "fiscSitIda",
+    "shape_area",
+    "adres",
+    "geo",
+    "owner"
+  ],
+
+  "selectFields": {
+    "entitity": [
+      { "value": "Bpn_CaPa", "label": "Kadastrale planpercelen" },
+      {
+        "value": "Bpn_CaBu",
+        "label": "Kadastrale gebouwen, beheerd door de AAPD"
+      },
+      { "value": "Bpn_Rebu", "label": "Gebouwen, beheerd door de gewesten" },
+      { "value": "Bpn_EqTo", "label": "Materieel en outillage" },
+      { "value": "Bpn_WaSu", "label": "Wateroppervlakken" },
+      { "value": "Bpn_CaBl", "label": "Kadastrale percelenblokken" },
+      { "value": "Bli_EaZo", "label": "Erfdienstbaarheden en voetwegen" },
+      { "value": "Bli_ToNa", "label": "Toponiemlijnen" },
+      { "value": "Bpt_ToNa", "label": "Toponiempunten" },
+      { "value": "Bpt_PrSt", "label": "Grenspalen" },
+      { "value": "Bpt_CaNu", "label": "Perceelnummers" }
+    ],
+    "type": [
+      { "value": "PR", "label": "Privaat domein" },
+      { "value": "PP", "label": "Publiek domein" }
+    ]
+  },
+
+  "listFields": [],
+
+  "knownWalletSelectFields": [],
+
+  "roleRegistrySelectFields": [],
+
+  "subItemActions": [],
+
+  "contractActions": [],
+
+  "ipfsOptionalFieldsForMethod": {},
+  "ipfsRequiredFieldsForMethod": {}
+}

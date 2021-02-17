@@ -1,0 +1,66 @@
+{
+    "ipfsOptionalFieldsForMethod": {},
+    "ipfsRequiredFieldsForMethod": {},
+    "ipfsRequiredFields": [
+      "gender",
+      "firstName",
+      "middleName",
+      "lastName",
+      "fatherName",
+      "motherName",
+      "dateOfBirth",
+      "city",
+      "addressLine1",
+      "addressLine2",
+      "addressLine3",
+      "pincode"
+    ],
+  
+    "ipfsOptionalFields": [
+      "miscInfo",
+      "birthCertificate",
+      "PAN",
+      "DL",
+      "ADHAAR",
+      "passport"
+    ],
+  
+    "contractRequiredFields": ["Name"],
+  
+    "contractOptionalFields": [],
+  
+    "fileFields": [
+      "birthCertificate",
+      "PAN",
+      "DL",
+      "ADHAAR",
+      "passport"
+    ],
+  
+    "dateFields": ["dateOfBirth"],
+  
+    "dateTimeFields": [],
+  
+    "textFields": ["miscInfo"],
+  
+    "listFields": [],
+  
+    "selectFields": {
+      "gender": [
+        { "value": "male", "label": "Male" },
+        { "value": "female", "label": "Female" }
+      ],
+      "city": [
+        { "value": "delhi", "label": "Delhi" },
+        { "value": "agra", "label": "Agra" },
+        { "value": "jaipur", "label": "Jaipur" }
+      ]
+    },
+  
+    "knownWalletSelectFields": [],
+  
+    "roleRegistrySelectFields": [],
+  
+    "subItemActions": []
+  }
+  

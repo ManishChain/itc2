@@ -1,0 +1,54 @@
+{
+  "ipfsRequiredFields": ["type", "plateNumber", "firstRegistrationDate", "make", "model", "channel", "origin"],
+
+  "ipfsOptionalFields": ["GCCPlateNumber"],
+
+  "contractRequiredFields": ["vin", "owner", "mileage"],
+
+  "contractOptionalFields": [],
+
+  "fileFields": [],
+
+  "dateFields": ["firstRegistrationDate"],
+
+  "textFields": [],
+
+  "selectFields": {
+    "type": [
+      { "value": "Car", "label": "Car" },
+      {
+        "value": "Semi-Trailer",
+        "label": "Semi-Trailer"
+      }
+    ],
+    "make": [
+      { "value": "Audi", "label": "Audi" },
+      { "value": "Tesla", "label": "Tesla" },
+      { "value": "Toyota", "label": "Toyota" },
+      { "value": "Nissan", "label": "Nissan" },
+      { "value": "Volvo", "label": "Volvo" }
+    ],
+    "channel": [
+      { "value": "Agent", "label": "Agent" },
+      { "value": "Broker", "label": "Broker" }
+    ],
+    "origin": [
+      { "value": "Local", "label": "Local" },
+      { "value": "GCC", "label": "GCC" },
+      { "value": "Other", "label": "Other" }
+    ]
+  },
+
+  "knownWalletSelectFields": ["owner"],
+
+  "roleRegistrySelectFields": [],
+
+  "subItemActions": [],
+
+  "contractActions": [],
+
+  "ipfsOptionalFieldsForMethod": {},
+  "ipfsRequiredFieldsForMethod": {},
+
+  "listFields": []
+}

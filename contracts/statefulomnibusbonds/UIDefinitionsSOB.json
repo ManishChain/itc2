@@ -1,0 +1,54 @@
+{
+  "ipfsRequiredFields": ["isin", "issuer", "maturityDate", "issuanceDate", "currency"],
+
+  "ipfsOptionalFields": [],
+
+  "ipfsOptionalFieldsForMethod": {},
+  "ipfsRequiredFieldsForMethod": {},
+
+  "contractRequiredFields": ["name", "symbol", "decimals", "parValue", "couponRate"],
+
+  "contractOptionalFields": ["comment"],
+
+  "fileFields": [],
+
+  "dateFields": ["maturityDate", "issuanceDate", "launchDate"],
+
+  "textFields": [],
+
+  "selectFields": {
+    "currency": [
+      { "value": "Euro", "label": "Euro" },
+      { "value": "Dollar", "label": "Dollar" },
+      { "value": "Singapore Dollar", "label": "Singapore Dollar" }
+    ],
+    "frequency": [
+      { "value": "ANN", "label": "Annual" },
+      { "value": "SEMI", "label": "Semi-Annual" }
+    ]
+  },
+
+  "knownWalletSelectFields": ["to"],
+
+  "knownTokenHoldersSelectFields": ["recipient", "sender"],
+
+  "roleRegistrySelectFields": [],
+
+  "subItemActions": [],
+
+  "contractActions": ["coupon", "transfer", "convert", "changesNeededWithComment"],
+
+  "listFields": [],
+
+  "fieldsWithDecimals": [
+    "balance",
+    "totalSupply",
+    "amount",
+    "holderBalance",
+    "_parValue",
+    "payment",
+    "price",
+    "inflightTotal",
+    "_couponRate"
+  ]
+}

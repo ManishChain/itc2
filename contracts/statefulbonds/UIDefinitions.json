@@ -1,0 +1,57 @@
+{
+  "ipfsRequiredFields": ["isin", "issuer", "maturityDate", "issuanceDate", "currency"],
+
+  "ipfsOptionalFields": [],
+
+  "ipfsOptionalFieldsForMethod": {},
+  "ipfsRequiredFieldsForMethod": {},
+
+  "contractRequiredFields": ["name", "decimals", "parValue", "inFlight", "couponRate"],
+
+  "contractOptionalFields": [],
+
+  "fileFields": [],
+
+  "dateFields": ["maturityDate", "issuanceDate", "launchDate", "timestamp"],
+
+  "textFields": [],
+
+  "selectFields": {
+    "currency": [
+      { "value": "Euro", "label": "Euro" },
+      { "value": "Dollar", "label": "Dollar" },
+      { "value": "Singapore Dollar", "label": "Singapore Dollar" }
+    ],
+    "inFlight": [
+      { "value": "YES", "label": "YES" },
+      { "value": "NO", "label": "NO" }
+    ],
+    "frequency": [
+      { "value": "ANN", "label": "Annual" },
+      { "value": "SEMI", "label": "Semi-Annual" }
+    ]
+  },
+
+  "knownWalletSelectFields": ["to"],
+
+  "roleRegistrySelectFields": [],
+
+  "subItemActions": [],
+
+  "contractActions": ["launch", "coupon", "transfer", "mature", "convert"],
+
+  "listFields": [],
+
+  "fieldsWithDecimals": [
+    "balance",
+    "totalSupply",
+    "amount",
+    "value",
+    "tokenizationAmount",
+    "_tokenizationAmount",
+    "holderBalance",
+    "_parValue",
+    "_couponRate",
+    "payment"
+  ]
+}

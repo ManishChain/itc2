@@ -1,0 +1,46 @@
+{
+  "ipfsRequiredFields": ["type", "name", "dosageForm", "labeller", "manufacturingDate"],
+
+  "ipfsOptionalFields": ["packageDesign", "activeSubstance"],
+
+  "contractRequiredFields": ["labellerCode", "productCode", "packageCode"],
+
+  "contractOptionalFields": [],
+
+  "fileFields": ["packageDesign"],
+
+  "dateFields": [],
+
+  "dateTimeFields": ["manufacturingDate"],
+
+  "textFields": [],
+
+  "selectFields": {
+    "type": [
+      { "value": "Vaccine", "label": "Vaccine" },
+      {
+        "value": "Human Prescription Drug",
+        "label": "Human Prescription Drug"
+      },
+      { "value": "Human OTC Drug", "label": "Human OTC Drug" }
+    ],
+    "dosageForm": [
+      { "value": "Capsule", "label": "Capsule" },
+      { "value": "Tablet", "label": "Tablet" },
+      { "value": "Injection", "label": "Injection" }
+    ]
+  },
+
+  "knownWalletSelectFields": [],
+
+  "roleRegistrySelectFields": [],
+
+  "subItemActions": [],
+
+  "contractActions": [],
+
+  "listFields": [],
+
+  "ipfsOptionalFieldsForMethod": {},
+  "ipfsRequiredFieldsForMethod": {}
+}
