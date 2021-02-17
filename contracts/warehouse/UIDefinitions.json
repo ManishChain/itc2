@@ -1,0 +1,58 @@
+{
+    "ipfsOptionalFieldsForMethod": {},
+    "ipfsRequiredFieldsForMethod": {},
+    "ipfsRequiredFields": [
+      "price",
+      "quantity",
+      "delivery_period",
+      "delivery_place",
+      "quality",
+      "variety",
+      "mandi_doc",
+      "register_in",
+      "register_out",
+      "warehouse_name",
+      "vendor_name"
+    ],
+  
+    "ipfsOptionalFields": [
+      "invoice_doc",
+      "comodity",
+      "origin",
+      "payment",
+      "reason_return",
+      "tare_weigh"
+    ],
+  
+    "contractRequiredFields": ["Invoice"],
+  
+    "contractOptionalFields": [],
+  
+    "fileFields": [
+        "invoice_doc",
+        "mandi_doc"
+      ],
+  
+    "dateFields": ["delivery_period"],
+  
+    "dateTimeFields": [],
+  
+    "textFields": [],
+  
+    "listFields": [],
+  
+    "selectFields": {
+      "variety": [
+        { "value": "variety-1", "label": "variety-1" },
+        { "value": "variety-2", "label": "variety-2" },
+        { "value": "variety-3", "label": "variety-3" },
+        { "value": "variety-4", "label": "variety-4" }
+      ]
+    },
+  
+    "knownWalletSelectFields": [],
+  
+    "roleRegistrySelectFields": [],
+  
+    "subItemActions": []
+  }
